@@ -1,0 +1,16 @@
+-keep class com.soreng.tunnel.** { *; }
+-keepclassmembers class com.soreng.tunnel.** { *; }
+-keepclasseswithmembernames class * { native <methods>; }
+-keepclassmembers class * { native <methods>; }
+-keep class go.** { *; }; -keep class libcore.** { *; }
+-keep class ca.psiphon.** { *; }; -keep class com.psiphon3.** { *; }
+-keep class com.google.gson.** { *; }
+-keep @com.google.gson.annotations.SerializedName class * { *; }
+-keepclassmembers class * { @com.google.gson.annotations.SerializedName <fields>; }
+-keep @androidx.room.Entity class * { *; }; -keep @androidx.room.Dao class * { *; }
+-keep class dagger.hilt.** { *; }
+-keep @dagger.hilt.android.HiltAndroidApp class * { *; }
+-keep @dagger.hilt.android.AndroidEntryPoint class * { *; }
+-dontwarn okhttp3.**; -dontwarn okio.**; -dontwarn org.slf4j.**
+-dontwarn javax.annotation.**; -dontwarn kotlin.reflect.**
+-keepclassmembers enum * { public static **[] values(); public static ** valueOf(java.lang.String); }
