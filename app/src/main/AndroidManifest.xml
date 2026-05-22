@@ -26,7 +26,6 @@
         android:theme="@style/Theme.SorenNG"
         android:hardwareAccelerated="true"
         android:largeHeap="true"
-        android:extractNativeLibs="true"
         tools:targetApi="34">
         <activity
             android:name=".ui.MainActivity"
